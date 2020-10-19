@@ -45,8 +45,8 @@ func defaultBool (b interface{}, def bool) bool {
 }
 
 func getAccessToken () string {
-  idealista_user := os.Getenv("IDEALISTA_API_USER")
-  idealista_pass := os.Getenv("IDEALISTA_API_PASS")
+  idealista_user := os.Getenv("IDEALISTA_GO_API_USER")
+  idealista_pass := os.Getenv("IDEALISTA_GO_API_PASS")
   encoded_credentials :=
     base64.StdEncoding.EncodeToString([]byte(idealista_user + ":" + idealista_pass))
   idealista_auth_url := "https://api.idealista.com/oauth/token"

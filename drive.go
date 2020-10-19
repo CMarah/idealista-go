@@ -87,7 +87,7 @@ func getPisosContent() string {
     log.Fatalf("Unable to retrieve Drive client: %v", err)
   }
 
-  resp, err := srv.Files.Export("1ZojzXaSUY0S5etEojj7kz6lawWm7GhZ0EDxF2mffihs", "text/csv").Download()
+  resp, err := srv.Files.Export(os.Getenv("IDEALISTA_GO_FILE_ID"), "text/csv").Download()
   if err != nil {
     log.Fatalf("Unable to download file: ", err)
   }

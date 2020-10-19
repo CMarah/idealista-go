@@ -9,9 +9,9 @@ The process is:
 4) TODO: Upload data to same file in Drive.
 
 Environment Variables:
-- `IDEALISTA_GO_DRIVE_FILE_ID`
-- `IDEALISTA_GO_IDEALISTA_API_USER`
-- `IDEALISTA_GO_IDEALISTA_API_PASS`
+- `IDEALISTA_GO_FILE_ID`
+- `IDEALISTA_GO_API_USER`
+- `IDEALISTA_GO_API_PASS`
 
 
 <br>
