@@ -142,7 +142,8 @@ func main() {
 
   new_csv := ""
   for _, row := range strings.Split(csv_string, "\n") {
-    if strings.Contains(row, "idealista") && strings.Split(row, ",")[16] === "sold" {
+    //if strings.Contains(row, "idealista") && strings.Split(row, ",")[16] === "sold" {
+    if strings.Contains(row, "idealista") {
       row_listing_id := strings.Split(row, "eble/")[1][:8]
       l, ok := listings[row_listing_id]
       if ok {
